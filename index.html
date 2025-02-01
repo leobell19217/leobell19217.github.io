@@ -7,50 +7,93 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 50px;
             background-color: #f4f4f4;
         }
-        h1 {
-            color: #333;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .links {
-            margin-top: 20px;
+        .header {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-start;
+            margin-bottom: 20px;
         }
-        a {
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .intro {
+            max-width: 600px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .column {
+            width: 45%;
+        }
+        h2 {
+            text-align: center;
+        }
+        .links a {
             display: block;
-            margin: 10px;
+            margin: 10px 0 5px;
             padding: 10px;
             background: #0073e6;
             color: white;
             text-decoration: none;
-            width: 200px;
-            margin-left: auto;
-            margin-right: auto;
+            text-align: center;
             border-radius: 5px;
         }
-        a:hover {
+        .links a:hover {
             background: #005bb5;
         }
-        img {
-            width: 150px; /* Adjust size */
-            height: auto;
-            border-radius: 50%; /* Makes it a circle */
-            margin-top: 20px;
+        .description {
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
-    <h1>My name is Leo and this is my website</h1>
-    
-    <!-- Embed the image -->
-    <img src="https://cdn.discordapp.com/attachments/698008082793365504/1335328740850270270/IMG_7978.jpg?ex=679fc54d&is=679e73cd&hm=578eb4a4698d40dfb424a994651f235f98aae21fc110be20591db7dce8220ed5&">
-
-    <div class="links">
-        <a href="https://www.faceit.com/en/players/naz" target="_blank">My Faceit Profile</a>
-        <a href="https://www.last.fm/user/YOUR_LASTFM_USERNAME" target="_blank">My Last.fm</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_1" target="_blank">Gradient Descent Application in base R</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_2" target="_blank">Professional Counter-Strike match prediction (WIP)</a>
+    <div class="container">
+        <div class="header">
+            <img src="https://cdn.discordapp.com/attachments/698008082793365504/1335328740850270270/IMG_7978.jpg" alt="Leo Bell">
+            <div class="intro">
+                <h1>Leo Bell</h1>
+                <p>I'm interested in decisionmaking. Academically & professionally, I'm interested in being able to leverage technology to enable both informed human decisionmaking as well as autonomous machine decisionmaking. I have 10+ years of experience of high-level competitive Counter-Strike (ESEA Main).</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="column">
+                <h2>Projects</h2>
+                <div class="links">
+                    <a href="https://github.com/leobell19217/Gradient-DescentLogistic-Regression/blob/main/Project_Final_R_File.r" target="_blank">Gradient Descent in R</a>
+                    <p class="description">An implementation of gradient descent for logistic regression in base R.</p>
+                    <a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_2" target="_blank">CS Match Prediction (WIP)</a>
+                    <p class="description">A work-in-progress machine learning model to predict Counter-Strike match outcomes.</p>
+                </div>
+            </div>
+            
+            <div class="column">
+                <h2>Gaming & Music</h2>
+                <div class="links">
+                    <a href="https://www.faceit.com/en/players/naz" target="_blank">My Faceit Profile</a>
+                    <p class="description">My competitive gaming stats and history on Faceit.</p>
+                    <a href="https://www.last.fm/user/leoblell" target="_blank">My Last.fm</a>
+                    <p class="description">A collection of my most listened-to artists and tracks.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
