@@ -13,7 +13,9 @@
         .container {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
+            max-width: 800px;
+            margin: auto;
         }
         .header {
             display: flex;
@@ -33,14 +35,14 @@
         }
         .content {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
             width: 100%;
         }
-        .column {
-            width: 45%;
+        .section {
+            margin-bottom: 20px;
         }
         h2 {
-            text-align: center;
+            text-align: left;
         }
         .links ul {
             list-style-type: disc;
@@ -65,15 +67,36 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://cdn.discordapp.com/attachments/698008082793365504/1335328740850270270/IMG_7978.jpg" alt="Leo Bell">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFw13B_Ktszgw/profile-displayphoto-shrink_800_800/B4EZSVsTYtHgAc-/0/1737678206827?e=1743638400&v=beta&t=YAZIinqcYbsnNFspl3TcgqFgEbaNJOu4qdKcA3X1Td4" alt="Leo Bell">
             <div class="intro">
                 <h1>Leo Bell</h1>
                 <p>I'm interested in decisionmaking. Academically & professionally, I'm interested in being able to leverage technology to enable both informed human decisionmaking as well as autonomous machine decisionmaking. I have 10+ years of experience of high-level competitive Counter-Strike (ESEA Main).</p>
             </div>
         </div>
-        
+
+        <div class="section">
+            <h2>General Info / Contact</h2>
+            <p><strong>Email:</strong> your.email@example.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">github.com/YOUR_GITHUB_USERNAME</a></p>
+        </div>
+
         <div class="content">
-            <div class="column">
+            <div class="section">
+                <h2>Recent Employment</h2>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <strong>Position at Company</strong> - Brief description of role and responsibilities.
+                        </li>
+                        <li>
+                            <strong>Another Position at Another Company</strong> - Brief description of role and responsibilities.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
                 <h2>Projects</h2>
                 <div class="links">
                     <ul>
@@ -89,7 +112,7 @@
                 </div>
             </div>
             
-            <div class="column">
+            <div class="section">
                 <h2>Gaming & Music</h2>
                 <div class="links">
                     <ul>
@@ -103,6 +126,11 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            
+            <div class="section">
+                <h2>Resume</h2>
+                <p>You can download my resume <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO/raw/main/resume.pdf" target="_blank">here</a>.</p>
             </div>
         </div>
     </div>
