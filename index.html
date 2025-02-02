@@ -3,49 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leo's Website</title>
+    <title>Leo Bell | Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         .header {
             display: flex;
             align-items: center;
-            width: 100%;
-            justify-content: flex-start;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 20px;
             margin-bottom: 20px;
         }
-        img {
-            width: 150px;
-            height: 150px;
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
             object-fit: cover;
             margin-right: 20px;
         }
-        .intro {
-            max-width: 600px;
-        }
-        .content {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
+        h1, h2 {
+            color: #0073e6;
         }
         .section {
+            padding: 20px;
+            border-radius: 8px;
+            background: #f9f9f9;
             margin-bottom: 20px;
         }
-        h2 {
-            text-align: left;
-        }
         .links ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style-type: none;
+            padding: 0;
         }
         .links li {
             margin-bottom: 10px;
@@ -53,13 +53,10 @@
         .links a {
             color: #0073e6;
             text-decoration: none;
+            font-weight: bold;
         }
         .links a:hover {
             text-decoration: underline;
-        }
-        .description {
-            font-size: 14px;
-            color: #333;
         }
     </style>
 </head>
@@ -67,93 +64,47 @@
     <div class="container">
         <div class="header">
             <img src="https://media.licdn.com/dms/image/v2/D4E03AQFw13B_Ktszgw/profile-displayphoto-shrink_800_800/B4EZSVsTYtHgAc-/0/1737678206827?e=1743638400&v=beta&t=YAZIinqcYbsnNFspl3TcgqFgEbaNJOu4qdKcA3X1Td4" alt="Leo Bell">
-            <div class="intro">
+            <div>
                 <h1>Leo Bell</h1>
-                <p>I'm interested in decisionmaking systems.
-                In mathematics, my main focuses are on (in pure math) "invariant object" theorems - looking at what *doesn't* change under transformations (i.e banach fixed ponint theorem) and in "applications," understanding how to leverage theory and technology for both human decisionmaking and autonomous machine decisionmaking.
-                </p>
+                <p>Interested in decision-making systems, invariant object theorems, and leveraging technology for better decision processes.</p>
             </div>
         </div>
 
         <div class="section">
-            <h2>General Info</h2>
+            <h2>Contact Info</h2>
             <p><strong>Email:</strong> leobell19217@gmail.com</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/leo-b-1074521b9/" target="_blank">linkedin.com/in/leo-b-1074521b9</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/leobell19217" target="_blank">https://github.com/leobell19217</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/leo-b-1074521b9/" target="_blank">LinkedIn Profile</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/leobell19217" target="_blank">GitHub Profile</a></p>
         </div>
 
-        <div class="content">
-            <div class="section">
-                <h2>Recent Employment</h2>
-                <div class="links">
-                    <ul>
-                        <li>
-                            <strong>Operations Research Systems Analyst</strong>  
-                            <br>📍 United States Department of Defense | Huntsville, AL | 2024 - Present  
-                            <ul>
-                                <li> Multiple-factor analysis projects across large-scale army systems for direct support of the commanding general
-leveraging. Core part of a development team for a user interface on various allocation projects utilizing various
-data cleaning and allocation optimization techniques in Python. Implemented user-facing interface allowing for
-changing of weights and a data quality "tiering" system within model in Palantir Foundry software</li>
-                                <li>Leveraged PyTorch for various proprietary image recognition projects</li>
-                                <li>Applied Python libraries (Pandas, Numpy, Scikit-Learn, PyTorch, PySpark) for data-driven decision-making</li>
-                                <li>Involved in exploratory investigation into synthetic data army use-cases</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Statistical Consultant</strong>  
-                            <br>📍 Penn State University Department of Statistics | 2022 - 2024  
-                            <ul>
-                                <li>Provided statistical support for various other-departmental graduate students, professors, and researchers</li>
-                                <li>Presented results and questions to faculty mentors and other students in a twice a week seminar-style ”consultant
-meeting” to get guidance for our own clients as well as provide support for other consultants</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Operations Research Systems Analyst</strong> | DoD, Huntsville, AL | 2024 - Present</li>
+                <li><strong>Statistical Consultant</strong> | Penn State University | 2022 - 2024</li>
+            </ul>
+        </div>
 
-            <div class="section">
-                <h2>Projects</h2>
-                <div class="links">
-                    <ul>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1SEORjqBqNP6T6Td1wY4hAEPjehXKg6YJ/view" target="_blank">Perplex Numbers and Applications</a>
-                            <p class="description">Comparsion of perplex number system to the complex number system.</p>
-                        </li>
-                        <li>
-                            <a href="https://github.com/leobell19217/Gradient-DescentLogistic-Regression" target="_blank">Gradient Descent in R</a>
-                            <p class="description">An implementation of gradient descent for logistic regression in base R.</p>
-                        </li>
-                        <li>
-                            <a href="https://github.com/leobell19217/Leo-Branden-ML" target="_blank">CS Match Prediction (WIP)</a>
-                            <p class="description">A work-in-progress machine learning model to predict Counter-Strike match outcomes.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="section">
+            <h2>Projects</h2>
+            <ul class="links">
+                <li><a href="https://drive.google.com/file/d/1SEORjqBqNP6T6Td1wY4hAEPjehXKg6YJ/view" target="_blank">Perplex Numbers and Applications</a></li>
+                <li><a href="https://github.com/leobell19217/Gradient-DescentLogistic-Regression" target="_blank">Gradient Descent in R</a></li>
+                <li><a href="https://github.com/leobell19217/Leo-Branden-ML" target="_blank">CS Match Prediction (WIP)</a></li>
+            </ul>
+        </div>
 
-            <div class="section">
-                <h2>Gaming & Music</h2>
-                <div class="links">
-                    <ul>
-                        <li>
-                            <a href="https://www.faceit.com/en/players/naz" target="_blank"> Faceit Profile</a>
-                            <p class="description">A significant degree of my interest for decisionmaking (particularly low information/marginal decisions) developed from being a high-level supporting player in team-based Counter-Strike, an online competitive video game.</p>
-                        </li>
-                        <li>
-                            <a href="https://www.last.fm/user/leoblell" target="_blank">My Last.fm</a>
-                            <p class="description">If you want to see the music I listen to</p>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
+        <div class="section">
+            <h2>Gaming & Music</h2>
+            <ul class="links">
+                <li><a href="https://www.faceit.com/en/players/naz" target="_blank">Faceit Profile</a></li>
+                <li><a href="https://www.last.fm/user/leoblell" target="_blank">My Last.fm</a></li>
+            </ul>
+        </div>
 
-            <div class="section">
-                <h2>Resume</h2>
-                <p>You can download my resume <a href="https://github.com/leobell19217/leobell19217.github.io/raw/main/Leo_Resume-13.pdf" download>here</a>.</p>
-            </div>
+        <div class="section">
+            <h2>Resume</h2>
+            <p><a href="https://github.com/leobell19217/leobell19217.github.io/raw/main/Leo_Resume-13.pdf" download>Download my Resume</a></p>
         </div>
     </div>
 </body>
